@@ -100,22 +100,8 @@ Open `http://localhost:8002` in your browser.
 - `GET /api/analytics/pipeline` (protected)
 - `GET /api/analytics/timeline` (protected)
 
-## Database Notes
 
-- The app currently uses SQLite in development.
-- Schema is initialized in `backend/config/database.js`.
-- SQL migration reference: `backend/db/migrations/001_initial_schema.sql`.
-- Backward-compatible patch is included for older DBs missing `users.name`.
-
-## Project Structure
-
-```text
-careertrack/
-  backend/   # Express API + SQLite + auth + analytics endpoints
-  frontend/  # React app (dashboard, auth, analytics)
-```
-
-## Success Criteria (PRD-Aligned)
+## Success Criteria 
 
 - Users can sign up/login/logout successfully
 - Users can add/edit/delete and filter applications
